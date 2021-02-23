@@ -13,7 +13,7 @@ train_data=torchvision.datasets.MNIST(
     root='./mnist',
     train=True,
     transform=torchvision.transforms.ToTensor(),
-    download=DOWNLOAD_MNIST
+    download=True
 )
 
 print(train_data.train_data.size())
